@@ -1,1 +1,1 @@
-#Loops in C\n Building programs using conditionals in C
+Application of fundamental concepts of C programming to write pograms
