@@ -49,10 +49,10 @@ int main(int argc, char *argv[])
 	{
 		if (check_num(argv[count]))
 		{
-			str_to_int = atoi(argv[count]); /* atoi program converts string to integer */
+			str_to_int = atoi(argv[count]); /* atoi program converts string to int */
 			sum += str_to_int;
 		}
-		else /* condition in case one of the numbers contains a symbol that is not a digit */
+		else /* condition for one number being a symbol, maybe not digit */
 		{
 			printf("Error\n");
 			return (1);
