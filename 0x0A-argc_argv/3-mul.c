@@ -17,13 +17,13 @@ int _atoi(char *s)
 	len = 0;
 	f = 0;
 	digit = 0;
-        
+
 	while (s[len] != '\0')
 		len++;
 	while (i < len && f == 0)
 	{
 		if (s[i] == '-')
-                	++d;
+			++d;
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
 	int num1;
 	int num2;
 
-	if (argc < 3 || argc > 3)        
+	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
