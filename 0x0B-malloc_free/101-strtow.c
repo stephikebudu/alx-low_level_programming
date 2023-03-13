@@ -1,4 +1,4 @@
-#include <stdlib.h>              
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -10,9 +10,10 @@
 
 int count_word(char *s)
 {
-	int flag;
-	int c;
-	int w;
+	int flag, c, w;
+
+	flag = 0;
+	w = 0;
 
 	for (c = 0; s[c] != '\0'; c++)
 	{
@@ -43,7 +44,7 @@ char **strtow(char *str)
 	while (*(str + len))
 		len++;
 
-	words = count_words(str);
+	words = count_word(str);
 
 	if (words == 0)
 		return (NULL);
